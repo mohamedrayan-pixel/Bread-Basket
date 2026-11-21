@@ -1,0 +1,13 @@
+THE BREAD BASKET - HOW TO RUN
+
+1. Install Node.js 22.5 or newer from https://nodejs.org  (check with: node -v)
+2. Open a terminal in this folder and run, one at a time:
+      npm install
+      npm run build
+      npm start
+3. Open http://localhost:3001
+
+Keep the terminal open while the website is running.
+After changing any file in "src" or "public", run "npm run build" again and restart.
+Prices, links, WhatsApp number and UPI details are in src/data/site.js.
+For WhatsApp to show a screenshot link that opens on your phone, set PUBLIC_BASE_URL in a .env file (see .env.example).
