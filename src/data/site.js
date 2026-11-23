@@ -16,7 +16,7 @@ export const SITE = {
   // Contact number printed on the customer bill
   billPhone: '73958 93773',
   // Image paths. Put your photos in /public/images and reference them like '/images/hero.jpg'
-  images: { hero: '', about: '/images/about-bakery.jpeg', cafe: '', logo: '/images/logo.png' },
+  images: { hero: '', about: '/images/about-bakery.jpeg', cafe: '/images/cafe.jpeg', logo: '/images/logo.png' },
 };
 
 export const directionsUrl = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
@@ -35,18 +35,18 @@ export const MENU = [
   { id: 'breads', name: 'Freshly Baked Breads', items: [
     { name: 'Milk Bread' }, { name: 'Wheat Bread', price: '₹40–₹50' }, { name: 'Salt Bread' },
     { name: 'Ciabatta' }, { name: 'Raisin Bread' }, { name: 'Wholemeal Bread' } ] },
-  { id: 'cookies', name: 'Cookies & Rusks', note: 'Cookie packs ₹90–₹200', price: '₹90–₹200', items: [
-    { name: 'Sweet Rusk' }, { name: 'Wheat Rusk', price: '₹100–₹150' }, { name: 'Butter Cookies' },
+  { id: 'cookies', name: 'Cookies & Rusks', note: 'Cookie packs', items: [
+    { name: 'Sweet Rusk' }, { name: 'Wheat Rusk' }, { name: 'Butter Cookies' },
     { name: 'Coconut Cookies' }, { name: 'Salt Cookies' }, { name: 'Chocolate Chip Cookies' } ] },
-  { id: 'dry', name: 'Signature Dry Cakes', note: '₹65 per piece', price: '₹65 / piece', items: [
+  { id: 'dry', name: 'Signature Dry Cakes', items: [
     { name: 'Ghee Cake' }, { name: 'Eggless Vanilla Cake' }, { name: 'Carrot Cake' },
     { name: 'Dates Cake' }, { name: 'Red Velvet Marble Cake' } ] },
   { id: 'cakes', name: 'Cakes & Desserts', items: [
     { name: 'Strawberry Cake' }, { name: 'Fruit and Nut Tea Cake' },
     { name: 'Swiss Rolls' }, { name: 'Muffins' }, { name: 'Custom Fondant Cakes' } ] },
   { id: 'savoury', name: 'Savoury & Café Specials', items: [
-    { name: 'Veg Cheese Sandwich', price: '₹60' }, { name: 'Veg Hot Dog' },
-    { name: 'Chicken Hot Dog', price: '₹65–₹80' }, { name: 'Chicken Burger' }, { name: 'Paneer Burger' },
+    { name: 'Veg Cheese Sandwich'}, { name: 'Veg Hot Dog' },
+    { name: 'Chicken Hot Dog' }, { name: 'Chicken Burger' }, { name: 'Paneer Burger' },
     { name: 'Bread Omelette' }, { name: 'Mushroom Manchurian' }, { name: 'French Fries' }, { name: 'Veg Pizza' } ] },
 ];
 

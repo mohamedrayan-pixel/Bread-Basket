@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { MENU } from '../data/site';
-import { Img, Heading, Section } from './ui';
+import { Heading, Section } from './ui';
 
 export default function Menu() {
   const [cat, setCat] = useState('all');
@@ -35,10 +35,9 @@ export default function Menu() {
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {c.items.map((i) => (
               <article key={i.name} className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-choc/5 lift group">
-                <Img src={i.image} alt={i.name} className="aspect-[4/3] [&_img]:transition-transform [&_img]:duration-500 group-hover:[&_img]:scale-110" />
                 <div className="p-4">
                   <h4 className="font-medium text-choc">{i.name}</h4>
-                  <p className="mt-1 text-sm font-semibold text-caramel">{i.price || c.price || 'Ask in store'}</p>
+                  
                 </div>
               </article>
             ))}
